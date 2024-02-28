@@ -7,7 +7,7 @@ openCameraButton.addEventListener('click', function() {
   Instascan.Camera.getCameras().then(function(cameras) {
     if (cameras.length > 0) {
       scanner.start(cameras[0]);
-      videoElement.style.display = 'block'; // Show the video element
+      videoElement.style.display = 'allow'; // Show the video element
     } else {
       console.error('No cameras found.');
     }
